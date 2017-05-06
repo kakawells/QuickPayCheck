@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/gross_income"
+        android:id="@+id/gross_income_w2"
+        android:layout_alignBottom="@+id/back"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:id="@+id/next"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hourly"
+        android:id="@+id/hourly"
+        android:layout_below="@+id/back"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salary"
+        android:id="@+id/salary"
+        android:layout_below="@+id/gross_income_w2"
+        android:layout_alignEnd="@+id/next" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/payroll_period"
+        android:id="@+id/payroll_period"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/hourly"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_payroll_period"
+        android:layout_alignBottom="@+id/payroll_period"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/salary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Hourly Rate"
+        android:id="@+id/hourly_rate"
+        android:layout_below="@+id/et_payroll_period"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Regular Hours"
+        android:id="@+id/regular_hours"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Overtime(x1.5)"
+        android:id="@+id/overtime"
+        android:layout_below="@+id/regular_hours"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tip In Check"
+        android:id="@+id/tip_in_check"
+        android:layout_below="@+id/overtime"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bonus"
+        android:id="@+id/bonus"
+        android:layout_below="@+id/tip_in_check"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_hourly_rate"
+        android:layout_alignBottom="@+id/hourly_rate"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/et_payroll_period" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_regular_hours"
+        android:layout_alignBottom="@+id/regular_hours"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/et_hourly_rate" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_overtime"
+        android:layout_alignBottom="@+id/overtime"
+        android:layout_alignEnd="@+id/et_regular_hours"
+        android:layout_alignStart="@+id/et_regular_hours" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_tip_in_check"
+        android:layout_alignBottom="@+id/tip_in_check"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/et_overtime" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_bonus"
+        android:layout_alignBottom="@+id/bonus"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/et_tip_in_check" />
+
+</RelativeLayout>
+

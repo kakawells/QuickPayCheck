@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:id="@+id/app_name"
+        android:layout_weight="0.10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/selectPayType"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/selectPayType"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/w2_employee"
+        android:id="@+id/w2_employee"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/contractor1099"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contractor1099"
+        android:id="@+id/contractor1099"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="203dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/w2_employee"
+        android:layout_alignEnd="@+id/w2_employee" />
+
+    <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/company_domain"
+         android:id="@+id/company_domain"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/contractor1099" />
+</RelativeLayout>

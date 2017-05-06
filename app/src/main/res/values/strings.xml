@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">QuickPayCheck</string>
+    <string name="selectPayType">Select pay type</string>
+    <string name="w2_employee">W2 EMPLOYEE</string>
+    <string name="contractor1099">1099_CONTRACTOR</string>
+    <string name="company_domain">www.k4tech.com</string>
+    <string name="title_activity_contractor1099">Contractor1099Activity</string>
+    <string name="bt_return">Return</string>
+    <string name="gross_income">Gross Income</string>
+    <string name="next">Next</string>
+    <string name="hourly">Hourly</string>
+    <string name="salary">Salary</string>
+    <string name="back">Back</string>
+    <string name="payroll_period">Payroll Period</string>
+    <string name="hourly_rate">Hourly Rate </string>
+    <string name="regular_hours">Regular Hours</string>
+    <string name="overtime">Overtime(x1.5)</string>
+    <string name="tip_in_check">Tip In Check</string>
+    <string name="bonus">Bonus</string>
+    <string name="hourly_1099">1099 Hourly</string>
+    <string name="save">Save</string>
+    <string name="reg_hour">#Reg/Hr</string>
+    <string name="ovt_hour">#Ovt/Hr</string>
+    <string name="tips">Tips</string>
+    <string name="netPayCheck">NetPayCheck</string>
+    <string name="start_over">START OVER</string>
+    <string name="overtime_hours">Overtime Hours</string>
+    <string name="annualSalary">Annual Salary</string>
+    <string name="title_activity_base_salary">BaseSalaryActivity</string>
+    <string name="contractor1099_salary_result_result">1099 SALARY</string>
+    <string name="withHolding">WITHHOLDING</string>
+    <string name="allowance">Allowance</string>
+    <string name="maritalStatus">Marital Status</string>
+    <string name="state">State</string>
+</resources>

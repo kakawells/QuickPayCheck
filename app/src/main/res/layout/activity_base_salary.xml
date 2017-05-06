@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/gross_income"
+        android:id="@+id/gross_income_w2"
+        android:layout_alignBottom="@+id/back"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:id="@+id/next"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hourly"
+        android:id="@+id/hourly"
+        android:layout_below="@+id/back"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salary"
+        android:id="@+id/salary"
+        android:layout_below="@+id/gross_income_w2"
+        android:layout_alignEnd="@+id/next" />
+
+    <TextView
+        android:id="@+id/annual_Salary"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:text="@string/annualSalary"
+        android:layout_alignBottom="@+id/annualSalary"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/annualSalary"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="98dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/t_payroll_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/annual_Salary"
+        android:layout_marginTop="57dp"
+        android:text="@string/payroll_period"
+        android:layout_alignEnd="@+id/annual_Salary" />
+
+    <EditText
+        android:id="@+id/et_payroll_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/t_payroll_period"
+        android:layout_toEndOf="@+id/annual_Salary"
+        android:ems="10"
+        android:layout_alignStart="@+id/annualSalary" />
+
+</RelativeLayout>
